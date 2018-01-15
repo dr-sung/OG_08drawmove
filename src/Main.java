@@ -7,14 +7,17 @@ public class Main {
     public static final int DEFAULT_FRAME_HEIGHT = 300;
 
     public static void main(String[] args) {
-        
+
         DrawMoveTester frame = new DrawMoveTester();
-        frame.initialize();
+
         frame.setSize(DEFAULT_FRAME_WIDTH, DEFAULT_FRAME_HEIGHT);
         frame.setTitle("DrawMoveTester");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
         frame.setLocation(100, 100);
+
+        frame.initialize();
         frame.setVisible(true);
-        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
 }

@@ -27,10 +27,8 @@ public class CanvasPanel extends JPanel {
      * @param dy the number of height units
      */
     public void moveRectangle(int dx, int dy) {
-        rect.setRect(
-                rect.getX() + dx * RECT_WIDTH,
-                rect.getY() + dy * RECT_HEIGHT,
-                RECT_WIDTH, RECT_HEIGHT);
+        rect.x += dx * RECT_WIDTH;
+        rect.y += dy * RECT_HEIGHT;
         repaint(); // request the invisible painter to redraw the canvas
     }
     

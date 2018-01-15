@@ -1,4 +1,5 @@
 
+import java.awt.BorderLayout;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -36,14 +37,14 @@ public class DrawMoveTester extends JFrame {
         // add components to content pane
 
         Container contentPane = getContentPane();
-        contentPane.add(canvas, "Center");
+        contentPane.add(canvas, BorderLayout.CENTER);
 
         buttonPanel.add(upButton);
         buttonPanel.add(downButton);
         buttonPanel.add(leftButton);
         buttonPanel.add(rightButton);
 
-        contentPane.add(buttonPanel, "South");
+        contentPane.add(buttonPanel, BorderLayout.SOUTH);
     }
 
     // inner class definition
